@@ -56,14 +56,26 @@ function demo() {
 
 function carousels() {
 
-    $('#main-slider').owlCarousel({
-	navigation: true, // Show next and prev buttons
-	slideSpeed: 300,
-	paginationSpeed: 400,
-	autoPlay: true,
-	stopOnHover: true,
-	singleItem: true,
-	afterInit: ''
+ //    $('#main-slider').owlCarousel({
+	// navigation: true, // Show next and prev buttons
+	// slideSpeed: 300,
+	// paginationSpeed: 400,
+	// autoPlay: true,
+	// stopOnHover: true,
+	// singleItem: true,
+	// afterInit: ''
+ //    });
+
+    $('.main-slider').each(function() {
+        $(this).owlCarousel({
+            navigation: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            autoPlay: true,
+            stopOnHover: true,
+            singleItem: true,
+            afterInit: ''
+        });
     });
    
 }
